@@ -24,6 +24,7 @@
                 data.forEach(product => {
 
                     const name = product.name.trim();
+                    const quantity = product.quantity;
 
                     // Automatically add .jpg
                     const imagePath = "images/" + name + ".jpg";
@@ -38,7 +39,7 @@
                         productDiv.innerHTML = `
                             <img src="${imagePath}" alt="${name}">
                             <div class="product-name">Style Id: ${name}</div>
-
+                            <div class="product-name">Inventory count: ${quantity}</div>
 
                         `;
 
