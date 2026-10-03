@@ -1,6 +1,746 @@
 [
-{
-    "name" : "211",
-    "quantity" : "55"
-}
+  {
+    "name": "36907030",
+    "order_frequency": "15",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "36907029",
+    "order_frequency": "11",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "38358563",
+    "order_frequency": "10",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "41268642",
+    "order_frequency": "8",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37649576",
+    "order_frequency": "8",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569233",
+    "order_frequency": "7",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37858416",
+    "order_frequency": "7",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "38358570",
+    "order_frequency": "7",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569235",
+    "order_frequency": "7",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "39175743",
+    "order_frequency": "7",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569238",
+    "order_frequency": "6",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37858414",
+    "order_frequency": "6",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "43568267",
+    "order_frequency": "6",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "44492559",
+    "order_frequency": "6",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37933582",
+    "order_frequency": "5",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37858415",
+    "order_frequency": "5",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "41268636",
+    "order_frequency": "5",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "45668849",
+    "order_frequency": "4",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "38358564",
+    "order_frequency": "4",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37649580",
+    "order_frequency": "4",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37649577",
+    "order_frequency": "4",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "41280335",
+    "order_frequency": "4",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "44528662",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "41343559",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569234",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "45851126",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "45191365",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569236",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40719445",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "42246466",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "36907025",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "41343560",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "42246467",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40805071",
+    "order_frequency": "3",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40805068",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "41161909",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "41268643",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37063559",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "36907012",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40196237",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "43565315",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37867684",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40805073",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "41700490",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40196210",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569237",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37063443",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "42058362",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40196239",
+    "order_frequency": "2",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "41343557",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "36750985",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40805074",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "45118004",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "45435547",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "38357094",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37063561",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "43565314",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "44503643",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40634681",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "38357097",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37867676",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40196221",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40805069",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "45668847",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "44504655",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40616398",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40196213",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40616502",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "39176400",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40196217",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37063558",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "41723151",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "41280333",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "39176607",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40196243",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "36907031",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "39176609",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "36907007",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569244",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "36907005",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "44503642",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "44528659",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "36907021",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "38356954",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569242",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40196215",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "39175742",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "36907016",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40196232",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "36907019",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37063441",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "45471273",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "36750979",
+    "order_frequency": "1",
+    "analysis_period": "28Aug_to_29Sep",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  }
 ]

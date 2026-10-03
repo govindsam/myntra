@@ -24,7 +24,11 @@
                 data.forEach(product => {
 
                     const name = product.name.trim();
-                    const quantity = product.quantity;
+                    const order_frequency = product.order_frequency;
+                    const analysis_period = product.analysis_period;
+                    const ok_inventory = product.ok_inventory;
+                    const damage_inventory = product.damage_inventory;
+                    const inventory_count_date = product.inventory_count_date;
 
                     // Automatically add .jpg
                     const imagePath = "images/" + name + ".jpg";
@@ -39,7 +43,12 @@
                         productDiv.innerHTML = `
                             <img src="${imagePath}" alt="${name}">
                             <div class="product-name">Style Id: ${name}</div>
-                            <div class="product-name">Inventory count: ${quantity}</div>
+                            <div class="product-name">Order Frequency : ${order_frequency}</div>
+                            <div class="product-name">Analysis Period : ${analysis_period}</div>
+                            <div class="product-name">Ok Inventory : ${ok_inventory}</div>
+                            <div class="product-name">Damage Inventory : ${damage_inventory}</div>
+                            <div class="product-name">Inventory Count Date: ${inventory_count_date}</div>
+
 
                         `;
 
