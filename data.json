@@ -11,9 +11,9 @@
     "name": "36907029",
     "order_frequency": "11",
     "analysis_period": "28Aug_to_29Sep",
-    "ok_inventory": "",
+    "ok_inventory": "16",
     "damage_inventory": "",
-    "inventory_count_date": ""
+    "inventory_count_date": "03/10/2026"
   },
   {
     "name": "38358563",
@@ -35,9 +35,9 @@
     "name": "37649576",
     "order_frequency": "8",
     "analysis_period": "28Aug_to_29Sep",
-    "ok_inventory": "",
-    "damage_inventory": "",
-    "inventory_count_date": ""
+    "ok_inventory": "16",
+    "damage_inventory": "0",
+    "inventory_count_date": "03/10/2026"
   },
   {
     "name": "40569233",
@@ -156,7 +156,7 @@
     "order_frequency": "4",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
-    "damage_inventory": "",
+    "damage_inventory": "0",
     "inventory_count_date": ""
   },
   {
