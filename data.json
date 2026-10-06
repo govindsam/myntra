@@ -120,8 +120,8 @@
     "name": "44492559",
     "order_frequency": "6",
     "analysis_period": "28Aug_to_29Sep",
-    "ok_inventory": "",
-    "damage_inventory": "",
+    "ok_inventory": "1",
+    "damage_inventory": "1",
     "inventory_count_date": "",
     "buy": "https://www.myntra.com/44492559"
   },
