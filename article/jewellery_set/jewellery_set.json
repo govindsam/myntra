@@ -1,722 +1,722 @@
 [
   {
-    "=\"name\"": "=\"37538098\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021437\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"37538092\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021431\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"40569233\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818469\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"45117991\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST143814488\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"40569236\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818472\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"40569239\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818475\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"40569242\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818478\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"37538101\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021440\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"43565312\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST139041071\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"37445039\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721976\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"37445044\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721981\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"40616398\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129961888\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"37445041\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721978\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538098",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021437",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37538092",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021431",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569233",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818469",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "45117991",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST143814488",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569236",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818472",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569239",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818475",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569242",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818478",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37538101",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021440",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "43565312",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST139041071",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37445039",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721976",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37445044",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721981",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40616398",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129961888",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37445041",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721978",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"43565315\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST139041074\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "43565315",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST139041074",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445057\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721994\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445057",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721994",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40569251\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818487\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40569251",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818487",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40569235\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818471\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40569235",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818471",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"39176610\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST125040441\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "39176610",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST125040441",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"44503643\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST141825780\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "44503643",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST141825780",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"43565314\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST139041072\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "43565314",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST139041072",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445046\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721983\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445046",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721983",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445050\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721987\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445050",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721987",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538103\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021442\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538103",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021442",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"44503642\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST141825779\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "44503642",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST141825779",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445042\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721979\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445042",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721979",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445047\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721984\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445047",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721984",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40569241\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818477\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40569241",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818477",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538094\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021433\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538094",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021433",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40569249\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818485\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40569249",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818485",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538106\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021445\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538106",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021445",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"45117992\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST143814489\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "45117992",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST143814489",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538100\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021439\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538100",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021439",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40719442\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST130297071\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40719442",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST130297071",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538099\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021438\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538099",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021438",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"41723149\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST133408049\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "41723149",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST133408049",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40719443\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST130297070\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40719443",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST130297070",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"43565309\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST139041068\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "43565309",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST139041068",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445049\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721986\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445049",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721986",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538102\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021441\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538102",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021441",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"41723151\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST133408051\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "41723151",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST133408051",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40719444\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST130297072\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40719444",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST130297072",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"39176607\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST125040435\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "39176607",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST125040435",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445052\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721989\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445052",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721989",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40569238\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818474\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40569238",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818474",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538108\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021447\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538108",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021447",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"46083941\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST147177718\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "46083941",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST147177718",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40569245\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818481\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40569245",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818481",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40569240\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818476\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40569240",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818476",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"41723146\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST133408046\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "41723146",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST133408046",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40616502\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129962180\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40616502",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129962180",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445056\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721993\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445056",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721993",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445048\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721985\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445048",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721985",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"41723152\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST133408052\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "41723152",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST133408052",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"46037498\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST147044273\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "46037498",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST147044273",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538096\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021435\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538096",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021435",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40569246\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818482\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40569246",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818482",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538093\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021432\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538093",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021432",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40569237\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818473\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40569237",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818473",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"42058366\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST134375782\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "42058366",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST134375782",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445051\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721988\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445051",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721988",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538105\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021444\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538105",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021444",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"41723147\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST133408047\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "41723147",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST133408047",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"41723153\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST133408053\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "41723153",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST133408053",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538107\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021446\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538107",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021446",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"46037499\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST147044274\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "46037499",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST147044274",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445045\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721982\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445045",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721982",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"43565313\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST139041073\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "43565313",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST139041073",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445053\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721990\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445053",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721990",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40569244\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818480\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40569244",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818480",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37538104\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021443\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37538104",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021443",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"43565311\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST139041070\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "43565311",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST139041070",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"42058362\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST134375770\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "42058362",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST134375770",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"46698107\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST149077149\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "46698107",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST149077149",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"37445055\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721992\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "37445055",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721992",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"41723150\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST133408050\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "41723150",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST133408050",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"41723148\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST133408048\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "41723148",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST133408048",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40569234\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818470\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40569234",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818470",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   },
   {
-    "=\"name\"": "=\"40719446\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST130297074\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"37445040\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721977\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"40569243\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818479\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"43565310\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST139041069\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"37445043\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721980\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"40569247\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818483\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"40569248\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818484\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"40569250\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818486\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"42058364\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST134375776\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"37538097\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021436\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"37538095\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST120021434\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"40569232\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST129818468\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
-  },
-  {
-    "=\"name\"": "=\"37445054\"",
-    "=\"article_type\"": "=\"Jewellery Set\"",
-    "=\"sku_code\"": "=\"MIASAJWST119721991\"",
-    "=\"ok_inventory\"": "=\"\"",
-    "=\"damage_inventory\"": "=\"\"",
-    "=\"inventory_count_date\"": "=\"\""
+    "name": "40719446",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST130297074",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37445040",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721977",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569243",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818479",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "43565310",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST139041069",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37445043",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721980",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569247",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818483",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569248",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818484",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569250",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818486",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "42058364",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST134375776",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37538097",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021436",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37538095",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST120021434",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "40569232",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST129818468",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
+  },
+  {
+    "name": "37445054",
+    "article_type": "Jewellery Set",
+    "myntra_sku_code": "MIASAJWST119721991",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": ""
   }
 ]
