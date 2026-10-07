@@ -1,6 +1,7 @@
 [
   {
     "name": "36907030",
+    "myntra_sku_code": "MIASAEARR118063951",
     "order_frequency": "15",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -10,6 +11,7 @@
   },
   {
     "name": "36907029",
+    "myntra_sku_code": "MIASAEARR118063950",
     "order_frequency": "11",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "16",
@@ -19,6 +21,7 @@
   },
   {
     "name": "38358563",
+    "myntra_sku_code": "MIASAEARR122421936",
     "order_frequency": "10",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "zero",
@@ -28,6 +31,7 @@
   },
   {
     "name": "41268642",
+    "myntra_sku_code": "MIASAEARR132030001",
     "order_frequency": "8",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -37,6 +41,7 @@
   },
   {
     "name": "37649576",
+    "myntra_sku_code": "MIASAEARR120379356",
     "order_frequency": "8",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "16",
@@ -46,6 +51,7 @@
   },
   {
     "name": "40569233",
+    "myntra_sku_code": "MIASAJWST129818469",
     "order_frequency": "7",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -55,6 +61,7 @@
   },
   {
     "name": "37858416",
+    "myntra_sku_code": "MIASARING120965392",
     "order_frequency": "7",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -64,6 +71,7 @@
   },
   {
     "name": "38358570",
+    "myntra_sku_code": "MIASAEARR122421943",
     "order_frequency": "7",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -73,6 +81,7 @@
   },
   {
     "name": "40569235",
+    "myntra_sku_code": "MIASAJWST129818471",
     "order_frequency": "7",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -82,6 +91,7 @@
   },
   {
     "name": "39175743",
+    "myntra_sku_code": "MIASABANG125037241",
     "order_frequency": "7",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -91,6 +101,7 @@
   },
   {
     "name": "40569238",
+    "myntra_sku_code": "MIASAJWST129818474",
     "order_frequency": "6",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -100,6 +111,7 @@
   },
   {
     "name": "37858414",
+    "myntra_sku_code": "MIASARING120965390",
     "order_frequency": "6",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -109,6 +121,7 @@
   },
   {
     "name": "43568267",
+    "myntra_sku_code": "MIASARING139047859",
     "order_frequency": "6",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -118,6 +131,7 @@
   },
   {
     "name": "44492559",
+    "myntra_sku_code": "MIASAEARR141783612",
     "order_frequency": "6",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "1",
@@ -127,6 +141,7 @@
   },
   {
     "name": "37933582",
+    "myntra_sku_code": "MIASABANG121198875",
     "order_frequency": "5",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -136,6 +151,7 @@
   },
   {
     "name": "37858415",
+    "myntra_sku_code": "MIASARING120965391",
     "order_frequency": "5",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -145,6 +161,7 @@
   },
   {
     "name": "41268636",
+    "myntra_sku_code": "MIASAEARR132029995",
     "order_frequency": "5",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "24",
@@ -154,6 +171,7 @@
   },
   {
     "name": "45668849",
+    "myntra_sku_code": "MIASARING145756932",
     "order_frequency": "4",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -163,6 +181,7 @@
   },
   {
     "name": "38358564",
+    "myntra_sku_code": "MIASAEARR122421937",
     "order_frequency": "4",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -172,6 +191,7 @@
   },
   {
     "name": "37649580",
+    "myntra_sku_code": "MIASAEARR120379360",
     "order_frequency": "4",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -181,6 +201,7 @@
   },
   {
     "name": "37649577",
+    "myntra_sku_code": "MIASAEARR120379357",
     "order_frequency": "4",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -190,6 +211,7 @@
   },
   {
     "name": "41280335",
+    "myntra_sku_code": "MIASAEARR132068522",
     "order_frequency": "4",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -199,6 +221,7 @@
   },
   {
     "name": "44528662",
+    "myntra_sku_code": "MIASABANG141906974",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -208,6 +231,7 @@
   },
   {
     "name": "41343559",
+    "myntra_sku_code": "MIASAEARR132266270",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -217,6 +241,7 @@
   },
   {
     "name": "40569234",
+    "myntra_sku_code": "MIASAJWST129818470",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -226,6 +251,7 @@
   },
   {
     "name": "45851126",
+    "myntra_sku_code": "MIASAANKL146429951",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -235,6 +261,7 @@
   },
   {
     "name": "45191365",
+    "myntra_sku_code": "MIASAHDJW144038288",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -244,6 +271,7 @@
   },
   {
     "name": "40569236",
+    "myntra_sku_code": "MIASAJWST129818472",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -253,6 +281,7 @@
   },
   {
     "name": "40719445",
+    "myntra_sku_code": "MIASAEARR130297073",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -262,6 +291,7 @@
   },
   {
     "name": "42246466",
+    "myntra_sku_code": "MIASAANKL134956771",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -271,6 +301,7 @@
   },
   {
     "name": "36907025",
+    "myntra_sku_code": "MIASAEARR118063946",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -280,6 +311,7 @@
   },
   {
     "name": "41343560",
+    "myntra_sku_code": "MIASAEARR132266271",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -289,6 +321,7 @@
   },
   {
     "name": "42246467",
+    "myntra_sku_code": "MIASAANKL134956772",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -298,6 +331,7 @@
   },
   {
     "name": "40805071",
+    "myntra_sku_code": "MIASAEARR130526990",
     "order_frequency": "3",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -307,6 +341,7 @@
   },
   {
     "name": "40805068",
+    "myntra_sku_code": "MIASAEARR130526987",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -316,6 +351,7 @@
   },
   {
     "name": "41161909",
+    "myntra_sku_code": "MIASABRCT131676041",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -325,6 +361,7 @@
   },
   {
     "name": "41268643",
+    "myntra_sku_code": "MIASAEARR132030002",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -334,6 +371,7 @@
   },
   {
     "name": "37063559",
+    "myntra_sku_code": "MIASAPEND118571456",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -343,6 +381,7 @@
   },
   {
     "name": "36907012",
+    "myntra_sku_code": "MIASAEARR118063927",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -352,6 +391,7 @@
   },
   {
     "name": "40196237",
+    "myntra_sku_code": "MIASABANG128581249",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -361,6 +401,7 @@
   },
   {
     "name": "43565315",
+    "myntra_sku_code": "MIASAJWST139041074",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -370,6 +411,7 @@
   },
   {
     "name": "37867684",
+    "myntra_sku_code": "MIASANECK120998684",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -379,6 +421,7 @@
   },
   {
     "name": "40805073",
+    "myntra_sku_code": "MIASAEARR130526992",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -388,6 +431,7 @@
   },
   {
     "name": "41700490",
+    "myntra_sku_code": "MIASARING133341776",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -397,6 +441,7 @@
   },
   {
     "name": "40196210",
+    "myntra_sku_code": "MIASABANG128581222",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -406,6 +451,7 @@
   },
   {
     "name": "40569237",
+    "myntra_sku_code": "MIASAJWST129818473",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -415,6 +461,7 @@
   },
   {
     "name": "37063443",
+    "myntra_sku_code": "MIASANECK118571016",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -424,6 +471,7 @@
   },
   {
     "name": "42058362",
+    "myntra_sku_code": "MIASAJWST134375770",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -433,6 +481,7 @@
   },
   {
     "name": "40196239",
+    "myntra_sku_code": "MIASABANG128581251",
     "order_frequency": "2",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -442,6 +491,7 @@
   },
   {
     "name": "41343557",
+    "myntra_sku_code": "MIASAEARR132266268",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -451,6 +501,7 @@
   },
   {
     "name": "36750985",
+    "myntra_sku_code": "MIASABRCT117526665",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -460,6 +511,7 @@
   },
   {
     "name": "40805074",
+    "myntra_sku_code": "MIASAEARR130526993",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -469,6 +521,7 @@
   },
   {
     "name": "45118004",
+    "myntra_sku_code": "MIASAEARR143814542",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -478,6 +531,7 @@
   },
   {
     "name": "45435547",
+    "myntra_sku_code": "MIASABRCT144906858",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -487,6 +541,7 @@
   },
   {
     "name": "38357094",
+    "myntra_sku_code": "MIASAEARR122418839",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -496,6 +551,7 @@
   },
   {
     "name": "37063561",
+    "myntra_sku_code": "MIASAPEND118571458",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -505,6 +561,7 @@
   },
   {
     "name": "43565314",
+    "myntra_sku_code": "MIASAJWST139041072",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -514,6 +571,7 @@
   },
   {
     "name": "44503643",
+    "myntra_sku_code": "MIASAJWST141825780",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -523,6 +581,7 @@
   },
   {
     "name": "40634681",
+    "myntra_sku_code": "MIASARING130018537",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -532,6 +591,7 @@
   },
   {
     "name": "38357097",
+    "myntra_sku_code": "MIASAEARR122418842",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -541,6 +601,7 @@
   },
   {
     "name": "37867676",
+    "myntra_sku_code": "MIASANECK120998676",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -550,6 +611,7 @@
   },
   {
     "name": "40196221",
+    "myntra_sku_code": "MIASABANG128581233",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -559,6 +621,7 @@
   },
   {
     "name": "40805069",
+    "myntra_sku_code": "MIASAEARR130526988",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -568,6 +631,7 @@
   },
   {
     "name": "45668847",
+    "myntra_sku_code": "MIASARING145756930",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -577,6 +641,7 @@
   },
   {
     "name": "44504655",
+    "myntra_sku_code": "MIASARING141828545",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -586,6 +651,7 @@
   },
   {
     "name": "40616398",
+    "myntra_sku_code": "MIASAJWST129961888",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -595,6 +661,7 @@
   },
   {
     "name": "40196213",
+    "myntra_sku_code": "MIASABANG128581225",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -604,6 +671,7 @@
   },
   {
     "name": "40616502",
+    "myntra_sku_code": "MIASAJWST129962180",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -613,6 +681,7 @@
   },
   {
     "name": "39176400",
+    "myntra_sku_code": "MIASABRCT125039777",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -622,6 +691,7 @@
   },
   {
     "name": "40196217",
+    "myntra_sku_code": "MIASABANG128581229",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -631,6 +701,7 @@
   },
   {
     "name": "37063558",
+    "myntra_sku_code": "MIASAPEND118571455",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -640,6 +711,7 @@
   },
   {
     "name": "41723151",
+    "myntra_sku_code": "MIASAJWST133408051",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -649,6 +721,7 @@
   },
   {
     "name": "41280333",
+    "myntra_sku_code": "MIASAEARR132068520",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -658,6 +731,7 @@
   },
   {
     "name": "39176607",
+    "myntra_sku_code": "MIASAJWST125040435",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -667,6 +741,7 @@
   },
   {
     "name": "40196243",
+    "myntra_sku_code": "MIASABANG128581255",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -676,6 +751,7 @@
   },
   {
     "name": "36907031",
+    "myntra_sku_code": "MIASAEARR118063952",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -685,6 +761,7 @@
   },
   {
     "name": "39176609",
+    "myntra_sku_code": "MIASAJWST125040440",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -694,6 +771,7 @@
   },
   {
     "name": "36907007",
+    "myntra_sku_code": "MIASAEARR118063923",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -703,6 +781,7 @@
   },
   {
     "name": "40569244",
+    "myntra_sku_code": "MIASAJWST129818480",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -712,6 +791,7 @@
   },
   {
     "name": "36907005",
+    "myntra_sku_code": "MIASAEARR118063920",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -721,6 +801,7 @@
   },
   {
     "name": "44503642",
+    "myntra_sku_code": "MIASAJWST141825779",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -730,6 +811,7 @@
   },
   {
     "name": "44528659",
+    "myntra_sku_code": "MIASABANG141906971",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -739,6 +821,7 @@
   },
   {
     "name": "36907021",
+    "myntra_sku_code": "MIASAEARR118063940",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -748,6 +831,7 @@
   },
   {
     "name": "38356954",
+    "myntra_sku_code": "MIASANECK122418427",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -757,6 +841,7 @@
   },
   {
     "name": "40569242",
+    "myntra_sku_code": "MIASAJWST129818478",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -766,6 +851,7 @@
   },
   {
     "name": "40196215",
+    "myntra_sku_code": "MIASABANG128581227",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -775,6 +861,7 @@
   },
   {
     "name": "39175742",
+    "myntra_sku_code": "MIASABANG125037238",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -784,6 +871,7 @@
   },
   {
     "name": "36907016",
+    "myntra_sku_code": "MIASAEARR118063931",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -793,6 +881,7 @@
   },
   {
     "name": "40196232",
+    "myntra_sku_code": "MIASABANG128581244",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -802,6 +891,7 @@
   },
   {
     "name": "36907019",
+    "myntra_sku_code": "MIASAEARR118063935",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -811,6 +901,7 @@
   },
   {
     "name": "37063441",
+    "myntra_sku_code": "MIASANECK118571014",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -820,6 +911,7 @@
   },
   {
     "name": "45471273",
+    "myntra_sku_code": "MIASABANG145040490",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -829,6 +921,7 @@
   },
   {
     "name": "36750979",
+    "myntra_sku_code": "MIASABRCT117526659",
     "order_frequency": "1",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -838,6 +931,7 @@
   },
   {
     "name": "42058366",
+    "myntra_sku_code": "MIASAJWST134375782",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -847,6 +941,7 @@
   },
   {
     "name": "43565310",
+    "myntra_sku_code": "MIASAJWST139041069",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -856,6 +951,7 @@
   },
   {
     "name": "43565309",
+    "myntra_sku_code": "MIASAJWST139041068",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -865,6 +961,7 @@
   },
   {
     "name": "43565312",
+    "myntra_sku_code": "MIASAJWST139041071",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -874,6 +971,7 @@
   },
   {
     "name": "46037498",
+    "myntra_sku_code": "MIASAJWST147044273",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -883,6 +981,7 @@
   },
   {
     "name": "43565313",
+    "myntra_sku_code": "MIASAJWST139041073",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -892,6 +991,7 @@
   },
   {
     "name": "46037499",
+    "myntra_sku_code": "MIASAJWST147044274",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -901,6 +1001,7 @@
   },
   {
     "name": "45117991",
+    "myntra_sku_code": "MIASAJWST143814488",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -910,6 +1011,7 @@
   },
   {
     "name": "40719446",
+    "myntra_sku_code": "MIASAJWST130297074",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "zero",
@@ -919,6 +1021,7 @@
   },
   {
     "name": "40569250",
+    "myntra_sku_code": "MIASAJWST129818486",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -928,6 +1031,7 @@
   },
   {
     "name": "40569249",
+    "myntra_sku_code": "MIASAJWST129818485",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -937,6 +1041,7 @@
   },
   {
     "name": "40569248",
+    "myntra_sku_code": "MIASAJWST129818484",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -946,6 +1051,7 @@
   },
   {
     "name": "41723148",
+    "myntra_sku_code": "MIASAJWST133408048",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -955,6 +1061,7 @@
   },
   {
     "name": "40719443",
+    "myntra_sku_code": "MIASAJWST130297070",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -964,6 +1071,7 @@
   },
   {
     "name": "40569241",
+    "myntra_sku_code": "MIASAJWST129818477",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -973,6 +1081,7 @@
   },
   {
     "name": "40569247",
+    "myntra_sku_code": "MIASAJWST129818483",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -982,6 +1091,7 @@
   },
   {
     "name": "40569245",
+    "myntra_sku_code": "MIASAJWST129818481",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -991,6 +1101,7 @@
   },
   {
     "name": "40569239",
+    "myntra_sku_code": "MIASAJWST129818475",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -1000,6 +1111,7 @@
   },
   {
     "name": "37538096",
+    "myntra_sku_code": "MIASAJWST120021435",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -1009,6 +1121,7 @@
   },
   {
     "name": "37538095",
+    "myntra_sku_code": "MIASAJWST120021434",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -1018,6 +1131,7 @@
   },
   {
     "name": "37538093",
+    "myntra_sku_code": "MIASAJWST120021432",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -1027,6 +1141,7 @@
   },
   {
     "name": "40569240",
+    "myntra_sku_code": "MIASAJWST129818476",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -1036,6 +1151,7 @@
   },
   {
     "name": "40569232",
+    "myntra_sku_code": "MIASAJWST129818468",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -1045,6 +1161,7 @@
   },
   {
     "name": "45117992",
+    "myntra_sku_code": "MIASAJWST143814489",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -1054,6 +1171,7 @@
   },
   {
     "name": "42058364",
+    "myntra_sku_code": "MIASAJWST134375776",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -1063,6 +1181,7 @@
   },
   {
     "name": "41723153",
+    "myntra_sku_code": "MIASAJWST133408053",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
     "ok_inventory": "",
@@ -1070,7 +1189,4 @@
     "inventory_count_date": "",
     "buy": "https://www.myntra.com/41723153"
   }
-
-
-
 ]

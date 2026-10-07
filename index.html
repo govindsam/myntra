@@ -42,6 +42,11 @@
                     const Style_Id = document.createElement("p");
                     Style_Id.textContent = "Style Id : " + product.name;
                     item.appendChild(Style_Id);
+
+                    const myntra_sku_code = document.createElement("p");
+                    myntra_sku_code.textContent = "Myntra SKU :" + product.myntra_sku_code;
+                    item.appendChild(myntra_sku_code);
+
                     const order_frequency = document.createElement("p");
                     order_frequency.textContent = "Order Frequency : " + product.order_frequency;
                     item.appendChild(order_frequency);
