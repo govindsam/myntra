@@ -21,7 +21,7 @@
     "name": "38358563",
     "order_frequency": "10",
     "analysis_period": "28Aug_to_29Sep",
-    "ok_inventory": "0",
+    "ok_inventory": "zero",
     "damage_inventory": "",
     "inventory_count_date": "06/10/2026",
     "buy": "https://www.myntra.com/38358563"
@@ -912,7 +912,7 @@
     "name": "40719446",
     "order_frequency": "0",
     "analysis_period": "28Aug_to_29Sep",
-    "ok_inventory": "",
+    "ok_inventory": "zero",
     "damage_inventory": "",
     "inventory_count_date": "",
     "buy": "https://www.myntra.com/40719446"
