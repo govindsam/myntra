@@ -6,31 +6,33 @@
 
  /* for Home button */
  .home-btn {
-     position: fixed;
-     right: 0;
-     top: 50%;
-     transform: translateY(-50%);
-     padding: 15px 10px;
-     background: #333;
-     color: white;
-     cursor: pointer;
-     z-index: 1001;
-     writing-mode: vertical-rl;
- }
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding: 15px 10px;
+    background: #333;
+    color: white;
+
+    cursor: pointer;
+    z-index: 1001;
+
+    writing-mode: vertical-rl;
+}
 
  /* Sidebar */
  .sidebar {
-     position: fixed;
-     top: 0;
-     right: -300px;
-     width: 300px;
-     height: 100%;
-     background: white;
-     box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3);
-     transition: 0.3s;
-     z-index: 1000;
-     padding: 60px 20px 20px;
- }
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(300px, 80vw);
+    height: 100%;
+    background: white;
+    transition: 0.3s;
+}
+
+
 
  /* Open sidebar */
  .sidebar.open {
