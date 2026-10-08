@@ -1,0 +1,32 @@
+[
+  {
+    "name": "42246467",
+    "article_type": "Anklet",
+    "myntra_sku_code": "MIASAANKL134956772",
+    "mrp": "1080",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": "",
+    "size": "Onesize"
+  },
+  {
+    "name": "45851126",
+    "article_type": "Anklet",
+    "myntra_sku_code": "MIASAANKL146429951",
+    "mrp": "1180",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": "",
+    "size": "Onesize"
+  },
+  {
+    "name": "42246466",
+    "article_type": "Anklet",
+    "myntra_sku_code": "MIASAANKL134956771",
+    "mrp": "2688",
+    "ok_inventory": "",
+    "damage_inventory": "",
+    "inventory_count_date": "",
+    "size": "Onesize"
+  }
+]
