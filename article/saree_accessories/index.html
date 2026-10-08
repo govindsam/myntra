@@ -11,7 +11,7 @@
 <body>
 
     <h1>Saree Accessories Inventory</h1>
-     <!-- for Home button -->
+    <!-- for Home button -->
     <div class="home-btn" onclick="openSidebar()">
         HOME
     </div>
@@ -22,7 +22,7 @@
         <div class="close-btn" onclick="closeSidebar()">×</div>
 
         <h2>Categories</h2>
-         <a href="https://govindsam.github.io/myntra" target="_blank">
+        <a href="https://govindsam.github.io/myntra" target="_blank">
             All Product
         </a>
         <a href="https://govindsam.github.io/myntra/article/earrings" target="_blank">
@@ -61,10 +61,10 @@
             Head Jewellery
         </a>
 
-        
+
 
         <a href="https://govindsam.github.io/myntra/article/mangalsutra" target="_blank">
-           Mangalsutra
+            Mangalsutra
         </a>
 
 
@@ -72,7 +72,16 @@
     <div id="products"></div>
 
     <script>
+        // for sidebar
+        function openSidebar() {
+            document.getElementById("sidebar").classList.add("open");
+        }
 
+        function closeSidebar() {
+            document.getElementById("sidebar").classList.remove("open");
+        }
+
+        // for product image
         fetch("saree_accessories.json")
             .then(response => response.json())
             .then(data => {
