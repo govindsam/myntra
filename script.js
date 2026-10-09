@@ -61,7 +61,7 @@ fetch("data.json")
 
             const link = document.createElement("a");
             link.textContent = "buy";
-            link.href = product.buy;
+            link.href = "https://myntra.com/"+product.name;
             link.target = "_blank";
             link.rel = "noopener noreferrer";
             item.appendChild(link);

@@ -96,7 +96,7 @@
 
                     const img = document.createElement("img");
 
-                    img.src = "../../images/" + product.name + ".jpg";
+                    img.src = "images/" + product.name + ".jpg";
                     img.alt = product.name;
 
                     // Remove product if image doesn't exist
@@ -136,12 +136,12 @@
                     inventory_count_date.textContent = "Inventory count date : " + product.inventory_count_date;
                     item.appendChild(inventory_count_date);
 
-                    // const link = document.createElement("a");
-                    // link.textContent = "buy";
-                    // link.href = product.buy;
-                    // link.target = "_blank";
-                    // link.rel = "noopener noreferrer";
-                    // item.appendChild(link);
+                    const link = document.createElement("a");
+                    link.textContent = "buy";
+                    link.href = "https://myntra.com/"+product.name;
+                    link.target = "_blank";
+                    link.rel = "noopener noreferrer";
+                    item.appendChild(link);
 
                     container.appendChild(item);
                 });
