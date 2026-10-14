@@ -74,6 +74,15 @@ fetch("data.json")
             snapshot_date.textContent = "snapshot date : " + product.snapshot_date;
             item.appendChild(snapshot_date);
 
+            const style_status_description = document.createElement("p");
+            style_status_description.textContent = "style status description : " + product["style status description"];
+            item.appendChild(style_status_description);
+
+            const listing_status_description = document.createElement("p");
+            listing_status_description.textContent = "listing status description : " + product["listing status description"];
+            item.appendChild(listing_status_description);
+
+
 
             container.appendChild(item);
         });
