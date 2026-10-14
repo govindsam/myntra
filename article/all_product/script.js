@@ -66,6 +66,15 @@ fetch("data.json")
             link.rel = "noopener noreferrer";
             item.appendChild(link);
 
+            const inventory_in_myntra_database = document.createElement("p");
+            inventory_in_myntra_database.textContent = "myntra database inventory : " + product.inventory_in_myntra_database;
+            item.appendChild(inventory_in_myntra_database);
+
+            const snapshot_date = document.createElement("p");
+            snapshot_date.textContent = "snapshot date : " + product.snapshot_date;
+            item.appendChild(snapshot_date);
+
+
             container.appendChild(item);
         });
 
