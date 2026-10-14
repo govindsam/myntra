@@ -22,8 +22,8 @@ fetch("data.json")
 
             const img = document.createElement("img");
 
-            img.src = "images/" + product.name + ".jpg";
-            img.alt = product.name;
+            img.src = "images/" + product["style id"] + ".jpg";
+            img.alt = product["style id"];
 
             // Remove product if image doesn't exist
             img.onerror = function () {
@@ -32,11 +32,11 @@ fetch("data.json")
 
             item.appendChild(img);
             const Style_Id = document.createElement("p");
-            Style_Id.textContent = "Style Id : " + product.name;
+            Style_Id.textContent = "Style Id : " + product["style id"];
             item.appendChild(Style_Id);
 
             const myntra_sku_code = document.createElement("p");
-            myntra_sku_code.textContent = "Myntra SKU :" + product.myntra_sku_code;
+            myntra_sku_code.textContent = "Myntra SKU :" + product["sku code"];
             item.appendChild(myntra_sku_code);
 
             const order_frequency = document.createElement("p");
@@ -61,7 +61,7 @@ fetch("data.json")
 
             const link = document.createElement("a");
             link.textContent = "buy";
-            link.href = "https://myntra.com/"+product.name;
+            link.href = "https://myntra.com/"+product["style id"];
             link.target = "_blank";
             link.rel = "noopener noreferrer";
             item.appendChild(link);
