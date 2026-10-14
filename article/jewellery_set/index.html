@@ -84,71 +84,70 @@
             document.getElementById("sidebar").classList.remove("open");
         }
 
-        // for product image
-        fetch("jewellery_set.json")
+        // Fetch and render product data safely
+        fetch("../../data.json")
             .then(response => response.json())
             .then(data => {
-
                 const container = document.getElementById("products");
-                container.innerHTML = "";
-
+                container.innerHTML = ""; // Clear existing contents
 
                 data.forEach(product => {
+                    //  Early exit if it's not an Jewellery Set to prevent creating empty container items
+                    if (product["article type"] !== "Jewellery Set") {
+                        return;
+                    }
+
                     const item = document.createElement("div");
                     item.className = "product";
 
+                    // 1. Image Element Setup
                     const img = document.createElement("img");
+                    img.src = `../../images/${product["style id"]}.jpg`;
+                    img.alt = product["style id"];
 
-                    img.src = "images/" + product.name + ".jpg";
-                    img.alt = product.name;
-
-                    // Remove product if image doesn't exist
+                    // Safely handles image errors asynchronously 
                     img.onerror = function () {
                         item.remove();
                     };
-
                     item.appendChild(img);
-                    const Style_Id = document.createElement("p");
-                    Style_Id.textContent = "Style Id : " + product.name;
-                    item.appendChild(Style_Id);
 
-                    // const order_frequency = document.createElement("p");
-                    // order_frequency.textContent = "Order Frequency : " + product.order_frequency;
-                    // item.appendChild(order_frequency);
+                    // 2. Text Details Elements
+                    const details = [
+                        { label: "Style Id", value: product["style id"] },
+                        { label: "Myntra SKU", value: product["sku code"] },
+                        { label: "Order Frequency", value: product.order_frequency },
+                        { label: "Analysis period", value: product.analysis_period },
+                        { label: "Ok Inventory", value: product.ok_inventory },
+                        { label: "Damage Inventory", value: product.damage_inventory },
+                        { label: "Inventory count date", value: product.inventory_count_date },
+                        { label: "myntra database inventory", value: product.inventory_in_myntra_database },
+                        { label: "snapshot date", value: product.snapshot_date },
+                        { label: "style status description", value: product["style status description"] },
+                        { label: "listing status description", value: product["listing status description"] }
+                    ];
 
-                    // const analysis_period = document.createElement("p");
-                    // analysis_period.textContent = "Analysis period : " + product.analysis_period;
-                    // item.appendChild(analysis_period);
-                    const myntra_sku_code = document.createElement("p");
-                    myntra_sku_code.textContent = "Myntra SKU :" + product.myntra_sku_code;
-                    item.appendChild(myntra_sku_code);
+                    details.forEach(detail => {
+                        const p = document.createElement("p");
+                        p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
+                        item.appendChild(p);
+                    });
 
-                    const ok_inventory = document.createElement("p");
-                    ok_inventory.textContent = "Ok Inventory :" + product.ok_inventory;
-                    item.appendChild(ok_inventory);
-
-                    const damage_inventory = document.createElement("p");
-                    damage_inventory.textContent = "Damage Inventory :" + product.damage_inventory;
-                    item.appendChild(damage_inventory);
-
-                    const inventory_count_date = document.createElement("p");
-                    inventory_count_date.textContent = "Inventory count date : " + product.inventory_count_date;
-                    item.appendChild(inventory_count_date);
-
+                    // 3. Purchase Link Element
                     const link = document.createElement("a");
                     link.textContent = "buy";
-                    link.href = "https://myntra.com/"+product.name;
+                    link.href = "https://myntra.com/" + product["style id"];
                     link.target = "_blank";
                     link.rel = "noopener noreferrer";
                     item.appendChild(link);
 
+                    // Only append the fully constructed valid card to the DOM
                     container.appendChild(item);
                 });
-
             })
             .catch(error => {
                 console.error("Error loading JSON:", error);
             });
+
 
     </script>
 

@@ -8,7 +8,7 @@ function closeSidebar() {
 }
 
 // for product image
-fetch("data.json")
+fetch("../../data.json")
     .then(response => response.json())
     .then(data => {
 
@@ -22,7 +22,7 @@ fetch("data.json")
 
             const img = document.createElement("img");
 
-            img.src = "images/" + product["style id"] + ".jpg";
+            img.src = "../../images/" + product["style id"] + ".jpg";
             img.alt = product["style id"];
 
             // Remove product if image doesn't exist
