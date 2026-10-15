@@ -377,9 +377,9 @@
     "listing status description": "Active",
     "order_frequency": "4",
     "analysis_period": "14Sep_to_13Oct",
-    "ok_inventory": "",
-    "damage_inventory": "",
-    "inventory_count_date": "",
+    "ok_inventory": "zero",
+    "damage_inventory": "1",
+    "inventory_count_date": "15/10/2026",
     "inventory_in_myntra_database": "#N/A",
     "snapshot_date": "14_Oct"
   },
