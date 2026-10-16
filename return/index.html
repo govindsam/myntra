@@ -93,82 +93,101 @@
             const date = new Date(dateString);
             return isNaN(date.getTime()) ? null : date;
         }
-        // Fetch and render product data safely
-        fetch("return.json")
-            .then(response => response.json())
-            .then(data => {
-                const container = document.getElementById("products");
-                container.innerHTML = "";
+       fetch("return.json")
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById("products");
+    container.innerHTML = ""; 
 
-                data.forEach(product => {
-                    const item = document.createElement("div");
-                    item.className = "product";
+    // Helper function to turn "DD/MM/YYYY" into a timestamp
+    const parseDateToMs = (dateStr) => {
+      if (!dateStr) return 0;
+      const [day, month, year] = dateStr.split("/").map(Number);
+      return Date.UTC(year, month - 1, day);
+    };
 
-                    // 1. Image Element Setup
-                    const img = document.createElement("img");
-                    img.src = `../images/${product.style_id}.jpg`;
-                    img.alt = product.style_id;
-                    img.onerror = () => item.remove(); // Safely removes broken image cards
-                    item.appendChild(img);
+    // Helper function to generate a consistent pastel color based on a string string
+    const getColorFromDate = (dateStr) => {
+      if (!dateStr) return "#ffffff";
+      let hash = 0;
+      for (let i = 0; i < dateStr.length; i++) {
+        hash = dateStr.charCodeAt(i) + ((hash << 5) - hash);
+      }
+      // Generates soft pastel colors using HSL
+      const hue = Math.abs(hash) % 360;
+      return `hsl(${hue}, 70%, 90%)`; 
+    };
 
-                    // 2. Shared Tracking Number Logic
-                    const forward_tracking_number = product.forward_tracking_number_1?.startsWith("SF")
-                        ? product.forward_tracking_number_2
-                        : product.forward_tracking_number_1;
+    // 1. Sort data from newest to oldest based on deliver_to_seller_date
+    data.sort((a, b) => parseDateToMs(b.deliver_to_seller_date) - parseDateToMs(a.deliver_to_seller_date));
 
-                    // 3. Base Details shared by both types
-                    const details = [
-                        { label: "Style Id", value: product.style_id },
-                        { label: "order_id", value: product.order_id },
-                        { label: "order_created_date", value: product.order_created_date },
-                        { label: "Type", value: product.type },
-                    ];
+    data.forEach(product => {
+      const item = document.createElement("div");
+      item.className = "product";
+      
+      // 2. Apply unique background color based on deliver_to_seller_date
+      item.style.backgroundColor = getColorFromDate(product.deliver_to_seller_date);
 
-                    // 4. Conditional Details Breakdown
-                    if (product.type !== "Return") {
-                        details.push(
-                            { label: "rto_cancel_date", value: product.rto_cancel_date },
-                            { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
-                            { label: "forward_tracking_number", value: forward_tracking_number }
-                        );
-                    } else {
-                        // Calculate date difference safely inline
-                        const parseDate = (d) => {
-                            const [day, month, year] = d.split("/").map(Number);
-                            return Date.UTC(year, month - 1, day);
-                        };
-                        const diffDays = Math.round((parseDate(product.return_created_date) - parseDate(product.customer_delivered_date)) / 86400000);
+      // Image Element Setup
+      const img = document.createElement("img");
+      img.src = `../images/${product.style_id}.jpg`;
+      img.alt = product.style_id;
+      img.onerror = () => item.remove();
+      item.appendChild(img);
 
-                        details.push(
-                            { label: "customer_delivered_date", value: product.customer_delivered_date },
-                            { label: "Days to return created", value: diffDays },
-                            { label: "return_created_date", value: product.return_created_date },
-                            { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
-                            { label: "return_reason", value: product.return_reason },
-                            { label: "forward_tracking_number", value: forward_tracking_number },
-                            { label: "return_tracking_number", value: product.return_tracking_number }
-                        );
-                    }
+      // Shared Tracking Number Logic
+      const forward_tracking_number = product.forward_tracking_number_1?.startsWith("SF")
+        ? product.forward_tracking_number_2
+        : product.forward_tracking_number_1;
 
-                    // Render all details
-                    details.forEach(detail => {
-                        const p = document.createElement("p");
-                        p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
-                        item.appendChild(p);
-                    });
+      // Base Details shared by both types
+      const details = [
+        { label: "Style Id", value: product.style_id },
+        { label: "order_id", value: product.order_id },
+        { label: "order_created_date", value: product.order_created_date },
+        { label: "Type", value: product.type },
+      ];
 
-                    // 5. Purchase Link Element
-                    const link = document.createElement("a");
-                    link.textContent = "buy";
-                    link.href = `https://myntra.com{product.style_id}`;
-                    link.target = "_blank";
-                    link.rel = "noopener noreferrer";
-                    item.appendChild(link);
+      // Conditional Details Breakdown
+      if (product.type !== "Return") {
+        details.push(
+          { label: "rto_cancel_date", value: product.rto_cancel_date },
+          { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
+          { label: "forward_tracking_number", value: forward_tracking_number }
+        );
+      } else {
+        const diffDays = Math.round((parseDateToMs(product.return_created_date) - parseDateToMs(product.customer_delivered_date)) / 86400000);
 
-                    container.appendChild(item);
-                });
-            })
-            .catch(error => console.error("Error loading JSON:", error));
+        details.push(
+          { label: "customer_delivered_date", value: product.customer_delivered_date },
+          { label: "Days to return created", value: diffDays },
+          { label: "return_created_date", value: product.return_created_date },
+          { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
+          { label: "return_reason", value: product.return_reason },
+          { label: "forward_tracking_number", value: forward_tracking_number },
+          { label: "return_tracking_number", value: product.return_tracking_number }
+        );
+      }
+
+      // Render all details
+      details.forEach(detail => {
+        const p = document.createElement("p");
+        p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
+        item.appendChild(p);
+      });
+
+      // Purchase Link Element
+      const link = document.createElement("a");
+      link.textContent = "buy";
+      link.href = `https://myntra.com{product.style_id}`;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      item.appendChild(link);
+
+      container.appendChild(item);
+    });
+  })
+  .catch(error => console.error("Error loading JSON:", error));
 
 
     </script>
