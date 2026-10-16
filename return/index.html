@@ -98,147 +98,77 @@
             .then(response => response.json())
             .then(data => {
                 const container = document.getElementById("products");
-                container.innerHTML = ""; // Clear existing contents
+                container.innerHTML = "";
 
                 data.forEach(product => {
+                    const item = document.createElement("div");
+                    item.className = "product";
 
-                    // 2. Text Details Elements
-                    if (product["type"] !== "Return") {
-                        const item = document.createElement("div");
-                        item.className = "product";
+                    // 1. Image Element Setup
+                    const img = document.createElement("img");
+                    img.src = `../images/${product.style_id}.jpg`;
+                    img.alt = product.style_id;
+                    img.onerror = () => item.remove(); // Safely removes broken image cards
+                    item.appendChild(img);
 
-                        // 1. Image Element Setup
-                        const img = document.createElement("img");
-                        img.src = `../images/${product["style_id"]}.jpg`;
-                        img.alt = product["style_id"];
+                    // 2. Shared Tracking Number Logic
+                    const forward_tracking_number = product.forward_tracking_number_1?.startsWith("SF")
+                        ? product.forward_tracking_number_2
+                        : product.forward_tracking_number_1;
 
-                        // Safely handles image errors asynchronously 
-                        img.onerror = function () {
-                            item.remove();
+                    // 3. Base Details shared by both types
+                    const details = [
+                        { label: "Style Id", value: product.style_id },
+                        { label: "order_id", value: product.order_id },
+                        { label: "order_created_date", value: product.order_created_date },
+                        { label: "Type", value: product.type },
+                    ];
+
+                    // 4. Conditional Details Breakdown
+                    if (product.type !== "Return") {
+                        details.push(
+                            { label: "rto_cancel_date", value: product.rto_cancel_date },
+                            { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
+                            { label: "forward_tracking_number", value: forward_tracking_number }
+                        );
+                    } else {
+                        // Calculate date difference safely inline
+                        const parseDate = (d) => {
+                            const [day, month, year] = d.split("/").map(Number);
+                            return Date.UTC(year, month - 1, day);
                         };
-                        item.appendChild(img);
+                        const diffDays = Math.round((parseDate(product.return_created_date) - parseDate(product.customer_delivered_date)) / 86400000);
 
-                        let forward_tracking_number;
-
-                        if (product["forward_tracking_number_1"]?.startsWith("SF")) {
-                            forward_tracking_number = product["forward_tracking_number_2"];
-                        } else {
-                            forward_tracking_number = product["forward_tracking_number_1"];
-                        }
-
-                        const details = [
-                            { label: "Style Id", value: product["style_id"] },
-                            { label: "order_id", value: product["order_id"] },
-                            { label: "order_created_date", value: product["order_created_date"] },
-                            { label: "Type", value: product["type"] },
-                            { label: "rto_cancel_date", value: product["rto_cancel_date"] },
-                            { label: "deliver_to_seller_date", value: product["deliver_to_seller_date"] },
+                        details.push(
+                            { label: "customer_delivered_date", value: product.customer_delivered_date },
+                            { label: "Days to return created", value: diffDays },
+                            { label: "return_created_date", value: product.return_created_date },
+                            { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
+                            { label: "return_reason", value: product.return_reason },
                             { label: "forward_tracking_number", value: forward_tracking_number },
-
-                        ];
-                        details.forEach(detail => {
-                            const p = document.createElement("p");
-                            p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
-                            item.appendChild(p);
-
-                        });
-
-
-
-
-
-                        // 3. Purchase Link Element
-                        const link = document.createElement("a");
-                        link.textContent = "buy";
-                        link.href = "https://myntra.com/" + product["style_id"];
-
-                        link.target = "_blank";
-                        link.rel = "noopener noreferrer";
-                        item.appendChild(link);
-
-                        // Only append the fully constructed valid card to the DOM
-                        container.appendChild(item);
+                            { label: "return_tracking_number", value: product.return_tracking_number }
+                        );
                     }
-                    else {
-                        const item = document.createElement("div");
-                        item.className = "product";
 
-                        // 1. Image Element Setup
-                        const img = document.createElement("img");
-                        img.src = `../images/${product["style_id"]}.jpg`;
-                        img.alt = product["style_id"];
+                    // Render all details
+                    details.forEach(detail => {
+                        const p = document.createElement("p");
+                        p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
+                        item.appendChild(p);
+                    });
 
-                        // Safely handles image errors asynchronously 
-                        img.onerror = function () {
-                            item.remove();
-                        };
-                        item.appendChild(img);
+                    // 5. Purchase Link Element
+                    const link = document.createElement("a");
+                    link.textContent = "buy";
+                    link.href = `https://myntra.com{product.style_id}`;
+                    link.target = "_blank";
+                    link.rel = "noopener noreferrer";
+                    item.appendChild(link);
 
-
-
-                        function dateDifference(startDate, endDate) {
-                            function parseDate(date) {
-                                const [day, month, year] = date.split("/").map(Number);
-                                return Date.UTC(year, month - 1, day);
-                            }
-
-                            const start = parseDate(startDate);
-                            const end = parseDate(endDate);
-
-                            return Math.round((end - start) / (1000 * 60 * 60 * 24));
-                        }
-                        const difference = dateDifference(product["customer_delivered_date"], product["return_created_date"]);
-
-                        let forward_tracking_number;
-
-                        if (product["forward_tracking_number_1"]?.startsWith("SF")) {
-                            forward_tracking_number = product["forward_tracking_number_2"];
-                        } else {
-                            forward_tracking_number = product["forward_tracking_number_1"];
-                        }
-                        const details = [
-                            { label: "Style Id", value: product["style_id"] },
-                            { label: "order_id", value: product["order_id"] },
-                            { label: "order_created_date", value: product["order_created_date"] },
-                            { label: "Type", value: product["type"] },
-                            { label: "customer_delivered_date", value: product["customer_delivered_date"] },
-                            { label: "Days to return created", value: difference },
-                            { label: "return_created_date", value: product["return_created_date"] },
-                            { label: "deliver_to_seller_date", value: product["deliver_to_seller_date"] },
-                            { label: "return_reason", value: product["return_reason"] },
-                            { label: "forward_tracking_number", value: forward_tracking_number },
-                            { label: "return_tracking_number", value: product["return_tracking_number"] },
-
-                        ];
-                        details.forEach(detail => {
-                            const p = document.createElement("p");
-                            p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
-                            item.appendChild(p);
-
-                        });
-
-
-
-
-
-                        // 3. Purchase Link Element
-                        const link = document.createElement("a");
-                        link.textContent = "buy";
-                        link.href = "https://myntra.com/" + product["style_id"];
-
-                        link.target = "_blank";
-                        link.rel = "noopener noreferrer";
-                        item.appendChild(link);
-
-                        // Only append the fully constructed valid card to the DOM
-                        container.appendChild(item);
-
-                    }
+                    container.appendChild(item);
                 });
             })
-            .catch(error => {
-                console.error("Error loading JSON:", error);
-            });
+            .catch(error => console.error("Error loading JSON:", error));
 
 
     </script>
