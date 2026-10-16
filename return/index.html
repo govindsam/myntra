@@ -103,69 +103,139 @@
                 data.forEach(product => {
 
                     // 2. Text Details Elements
-                    if (product["type"] !== "Return") { return; }
-                    const item = document.createElement("div");
-                    item.className = "product";
+                    if (product["type"] !== "Return") {
+                        const item = document.createElement("div");
+                        item.className = "product";
 
-                    // 1. Image Element Setup
-                    const img = document.createElement("img");
-                    img.src = `../images/${product["style_id"]}.jpg`;
-                    img.alt = product["style_id"];
+                        // 1. Image Element Setup
+                        const img = document.createElement("img");
+                        img.src = `../images/${product["style_id"]}.jpg`;
+                        img.alt = product["style_id"];
 
-                    // Safely handles image errors asynchronously 
-                    img.onerror = function () {
-                        item.remove();
-                    };
-                    item.appendChild(img);
+                        // Safely handles image errors asynchronously 
+                        img.onerror = function () {
+                            item.remove();
+                        };
+                        item.appendChild(img);
 
 
-                   
-                    function dateDifference(startDate, endDate) {
-                        function parseDate(date) {
-                            const [day, month, year] = date.split("/").map(Number);
-                            return Date.UTC(year, month - 1, day);
+
+                        function dateDifference(startDate, endDate) {
+                            function parseDate(date) {
+                                const [day, month, year] = date.split("/").map(Number);
+                                return Date.UTC(year, month - 1, day);
+                            }
+
+                            const start = parseDate(startDate);
+                            const end = parseDate(endDate);
+
+                            return Math.round((end - start) / (1000 * 60 * 60 * 24));
                         }
 
-                        const start = parseDate(startDate);
-                        const end = parseDate(endDate);
+                        const difference = dateDifference(product["customer_delivered_date"], product["return_created_date"]);
 
-                        return Math.round((end - start) / (1000 * 60 * 60 * 24));
+                        const details = [
+                            { label: "Style Id", value: product["style_id"] },
+                            { label: "order_id", value: product["order_id"] },
+                            { label: "order_created_date", value: product["order_created_date"] },
+                            { label: "customer_delivered_date", value: product["customer_delivered_date"] },
+                            { label: "Days to return created", value: difference },
+                            { label: "return_created_date", value: product["return_created_date"] },
+                            { label: "deliver_to_seller_date", value: product["deliver_to_seller_date"] },
+                            { label: "return_reason", value: product["return_reason"] },
+                            { label: "return_tracking_number", value: product["return_tracking_number"] },
+
+                        ];
+                        details.forEach(detail => {
+                            const p = document.createElement("p");
+                            p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
+                            item.appendChild(p);
+
+                        });
+
+
+
+
+
+                        // 3. Purchase Link Element
+                        const link = document.createElement("a");
+                        link.textContent = "buy";
+                        link.href = "https://myntra.com/" + product["style_id"];
+
+                        link.target = "_blank";
+                        link.rel = "noopener noreferrer";
+                        item.appendChild(link);
+
+                        // Only append the fully constructed valid card to the DOM
+                        container.appendChild(item);
                     }
+                    else {
+                        const item = document.createElement("div");
+                        item.className = "product";
 
-                    const difference = dateDifference(product["customer_delivered_date"], product["return_created_date"]);
+                        // 1. Image Element Setup
+                        const img = document.createElement("img");
+                        img.src = `../images/${product["style_id"]}.jpg`;
+                        img.alt = product["style_id"];
 
-                    const details = [
-                        { label: "Style Id", value: product["style_id"] },
-                        { label: "order_id", value: product["order_id"] },
-                        { label: "order_created_date", value: product["order_created_date"] },
-                        { label: "customer_delivered_date", value: product["customer_delivered_date"] },
-                        { label: "Days to return created", value: difference },
-                        { label: "return_created_date", value: product["return_created_date"] },
-                        { label: "deliver_to_seller_date", value: product["deliver_to_seller_date"] },
-                        { label: "return_reason", value: product["return_reason"] }
-                    ];
-                    details.forEach(detail => {
-                        const p = document.createElement("p");
-                        p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
-                        item.appendChild(p);
-
-                    });
+                        // Safely handles image errors asynchronously 
+                        img.onerror = function () {
+                            item.remove();
+                        };
+                        item.appendChild(img);
 
 
 
+                        function dateDifference(startDate, endDate) {
+                            function parseDate(date) {
+                                const [day, month, year] = date.split("/").map(Number);
+                                return Date.UTC(year, month - 1, day);
+                            }
+
+                            const start = parseDate(startDate);
+                            const end = parseDate(endDate);
+
+                            return Math.round((end - start) / (1000 * 60 * 60 * 24));
+                        }
+
+                        const difference = dateDifference(product["customer_delivered_date"], product["return_created_date"]);
+
+                        const details = [
+                            { label: "Style Id", value: product["style_id"] },
+                            { label: "order_id", value: product["order_id"] },
+                            { label: "order_created_date", value: product["order_created_date"] },
+                            { label: "customer_delivered_date", value: product["customer_delivered_date"] },
+                            { label: "Days to return created", value: difference },
+                            { label: "return_created_date", value: product["return_created_date"] },
+                            { label: "deliver_to_seller_date", value: product["deliver_to_seller_date"] },
+                            { label: "return_reason", value: product["return_reason"] },
+                            { label: "return_tracking_number", value: product["return_tracking_number"] },
+
+                        ];
+                        details.forEach(detail => {
+                            const p = document.createElement("p");
+                            p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
+                            item.appendChild(p);
+
+                        });
 
 
-                    // 3. Purchase Link Element
-                    const link = document.createElement("a");
-                    link.textContent = "buy";
-                    link.href = "https://myntra.com/" + product["style_id"];
 
-                    link.target = "_blank";
-                    link.rel = "noopener noreferrer";
-                    item.appendChild(link);
 
-                    // Only append the fully constructed valid card to the DOM
-                    container.appendChild(item);
+
+                        // 3. Purchase Link Element
+                        const link = document.createElement("a");
+                        link.textContent = "buy";
+                        link.href = "https://myntra.com/" + product["style_id"];
+
+                        link.target = "_blank";
+                        link.rel = "noopener noreferrer";
+                        item.appendChild(link);
+
+                        // Only append the fully constructed valid card to the DOM
+                        container.appendChild(item);
+
+                    }
                 });
             })
             .catch(error => {
