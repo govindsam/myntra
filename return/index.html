@@ -118,32 +118,22 @@
                         };
                         item.appendChild(img);
 
+                        let forward_tracking_number;
 
-
-                        function dateDifference(startDate, endDate) {
-                            function parseDate(date) {
-                                const [day, month, year] = date.split("/").map(Number);
-                                return Date.UTC(year, month - 1, day);
-                            }
-
-                            const start = parseDate(startDate);
-                            const end = parseDate(endDate);
-
-                            return Math.round((end - start) / (1000 * 60 * 60 * 24));
+                        if (product["forward_tracking_number_1"]?.startsWith("SF")) {
+                            forward_tracking_number = product["forward_tracking_number_2"];
+                        } else {
+                            forward_tracking_number = product["forward_tracking_number_1"];
                         }
-
-                        const difference = dateDifference(product["customer_delivered_date"], product["return_created_date"]);
 
                         const details = [
                             { label: "Style Id", value: product["style_id"] },
                             { label: "order_id", value: product["order_id"] },
                             { label: "order_created_date", value: product["order_created_date"] },
-                            { label: "customer_delivered_date", value: product["customer_delivered_date"] },
-                            { label: "Days to return created", value: difference },
-                            { label: "return_created_date", value: product["return_created_date"] },
+                            { label: "Type", value: product["type"] },
+                            { label: "rto_cancel_date", value: product["rto_cancel_date"] },
                             { label: "deliver_to_seller_date", value: product["deliver_to_seller_date"] },
-                            { label: "return_reason", value: product["return_reason"] },
-                            { label: "return_tracking_number", value: product["return_tracking_number"] },
+                            { label: "forward_tracking_number", value: forward_tracking_number },
 
                         ];
                         details.forEach(detail => {
@@ -210,12 +200,13 @@
                             { label: "Style Id", value: product["style_id"] },
                             { label: "order_id", value: product["order_id"] },
                             { label: "order_created_date", value: product["order_created_date"] },
+                            { label: "Type", value: product["type"] },
                             { label: "customer_delivered_date", value: product["customer_delivered_date"] },
                             { label: "Days to return created", value: difference },
                             { label: "return_created_date", value: product["return_created_date"] },
                             { label: "deliver_to_seller_date", value: product["deliver_to_seller_date"] },
                             { label: "return_reason", value: product["return_reason"] },
-                             { label: "forward_tracking_number", value: forward_tracking_number },
+                            { label: "forward_tracking_number", value: forward_tracking_number },
                             { label: "return_tracking_number", value: product["return_tracking_number"] },
 
                         ];
