@@ -119,15 +119,10 @@
                     item.appendChild(img);
 
 
-                    // const returnDate = parseDate(product["return_created_date"]);
-                    // const customer_delivered_date = parseDate(product["customer_delivered_date"]);
-
-                    // const difference = (returnDate && customer_delivered_date)
-                    //     ? Math.round(Math.abs(returnDate - customer_delivered_date) / (1000 * 60 * 60 * 24))
-                    //     : "N/A";
+                   
                     function dateDifference(startDate, endDate) {
                         function parseDate(date) {
-                            const [month, day, year] = date.split("/").map(Number);
+                            const [day, month, year] = date.split("/").map(Number);
                             return Date.UTC(year, month - 1, day);
                         }
 
@@ -136,8 +131,9 @@
 
                         return Math.round((end - start) / (1000 * 60 * 60 * 24));
                     }
+
                     const difference = dateDifference(product["customer_delivered_date"], product["return_created_date"]);
-                    
+
                     const details = [
                         { label: "Style Id", value: product["style_id"] },
                         { label: "order_id", value: product["order_id"] },
