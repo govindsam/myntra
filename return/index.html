@@ -93,118 +93,126 @@
             const date = new Date(dateString);
             return isNaN(date.getTime()) ? null : date;
         }
-       fetch("return.json")
-  .then(response => response.json())
-  .then(data => {
-    const container = document.getElementById("products");
-    container.innerHTML = ""; 
+        fetch("return.json")
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById("products");
+                container.innerHTML = "";
 
-    // Helper function to turn "DD/MM/YYYY" into a timestamp
-    const parseDateToMs = (dateStr) => {
-      if (!dateStr) return 0;
-      const [day, month, year] = dateStr.split("/").map(Number);
-      return Date.UTC(year, month - 1, day);
-    };
+                // Helper function to turn "DD/MM/YYYY" into a timestamp
+                const parseDateToMs = (dateStr) => {
+                    if (!dateStr) return 0;
+                    const [day, month, year] = dateStr.split("/").map(Number);
+                    return Date.UTC(year, month - 1, day);
+                };
 
-    // Helper function to generate a random dark, vibrant color
-    const generateRandomDarkColor = () => {
-      const hue = Math.floor(Math.random() * 360);
-      return `hsl(${hue}, 85%, 40%)`; 
-    };
+                // Helper function to generate a random dark, vibrant color
+                const generateRandomDarkColor = () => {
+                    const hue = Math.floor(Math.random() * 360);
+                    return `hsl(${hue}, 85%, 40%)`;
+                };
 
-    // 1. Sort data from newest to oldest based on deliver_to_seller_date
-    data.sort((a, b) => parseDateToMs(b.deliver_to_seller_date) - parseDateToMs(a.deliver_to_seller_date));
+                // 1. Sort data from newest to oldest based on deliver_to_seller_date
+                data.sort((a, b) => parseDateToMs(b.deliver_to_seller_date) - parseDateToMs(a.deliver_to_seller_date));
 
-    // 2. Create a map to store a unique random dark color for each unique date
-    const dateColorMap = {};
-    let lastDate = null; // Tracks the date of the previous card
+                // 2. Create a map to store a unique random dark color for each unique date
+                const dateColorMap = {};
+                let lastDate = null;
 
-    data.forEach(product => {
-      const item = document.createElement("div");
-      item.className = "product";
-      
-      const currentDate = product.deliver_to_seller_date || "N/A";
-      
-      // 3. Assign or retrieve the dark color for this specific date
-      if (!dateColorMap[currentDate]) {
-        dateColorMap[currentDate] = generateRandomDarkColor();
-      }
-      
-      // 4. Apply a thick 5px top border using the unique date color
-      item.style.borderTop = `5px solid ${dateColorMap[currentDate]}`;
-      // Light border for the remaining sides to keep the card structure clean
-      item.style.borderLeft = "1px solid #ddd";
-      item.style.borderRight = "1px solid #ddd";
-      item.style.borderBottom = "1px solid #ddd";
-      item.style.borderRadius = "5px";
-      item.style.backgroundColor = "#ffffff";
+                data.forEach(product => {
+                    const item = document.createElement("div");
+                    item.className = "product";
 
-      // 5. Visually separate the two new dates using extra margin spacing
-      if (lastDate !== null && lastDate !== currentDate) {
-        item.style.marginTop = "30px"; 
-      }
-      lastDate = currentDate; // Update tracker for the next iteration
+                    const currentDate = product.deliver_to_seller_date || "N/A";
 
-      // Image Element Setup
-      const img = document.createElement("img");
-      img.src = `../images/${product.style_id}.jpg`;
-      img.alt = product.style_id;
-      img.onerror = () => item.remove();
-      item.appendChild(img);
+                    // Assign or retrieve the dark color for this specific date
+                    if (!dateColorMap[currentDate]) {
+                        dateColorMap[currentDate] = generateRandomDarkColor();
+                    }
 
-      // Shared Tracking Number Logic
-      const forward_tracking_number = product.forward_tracking_number_1?.startsWith("SF")
-        ? product.forward_tracking_number_2
-        : product.forward_tracking_number_1;
+                    // Regular card styling (no more colored top border)
+                    item.style.border = "1px solid #ddd";
+                    item.style.borderRadius = "5px";
+                    item.style.backgroundColor = "#ffffff";
 
-      // Base Details shared by both types
-      const details = [
-        { label: "Style Id", value: product.style_id },
-        { label: "order_id", value: product.order_id },
-        { label: "order_created_date", value: product.order_created_date },
-        { label: "Type", value: product.type },
-      ];
+                    // Visually separate the two new dates using extra margin spacing
+                    if (lastDate !== null && lastDate !== currentDate) {
+                        item.style.marginTop = "30px";
+                    }
+                    lastDate = currentDate;
 
-      // Conditional Details Breakdown
-      if (product.type !== "Return") {
-        details.push(
-          { label: "rto_cancel_date", value: product.rto_cancel_date },
-          { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
-          { label: "forward_tracking_number", value: forward_tracking_number }
-        );
-      } else {
-        const diffDays = Math.round((parseDateToMs(product.return_created_date) - parseDateToMs(product.customer_delivered_date)) / 86400000);
+                    // Image Element Setup
+                    const img = document.createElement("img");
+                    img.src = `../images/${product.style_id}.jpg`;
+                    img.alt = product.style_id;
+                    img.onerror = () => item.remove();
+                    item.appendChild(img);
 
-        details.push(
-          { label: "customer_delivered_date", value: product.customer_delivered_date },
-          { label: "Days to return created", value: diffDays },
-          { label: "return_created_date", value: product.return_created_date },
-          { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
-          { label: "return_reason", value: product.return_reason },
-          { label: "forward_tracking_number", value: forward_tracking_number },
-          { label: "return_tracking_number", value: product.return_tracking_number }
-        );
-      }
+                    // Shared Tracking Number Logic
+                    const forward_tracking_number = product.forward_tracking_number_1?.startsWith("SF")
+                        ? product.forward_tracking_number_2
+                        : product.forward_tracking_number_1;
 
-      // Render all details
-      details.forEach(detail => {
-        const p = document.createElement("p");
-        p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
-        item.appendChild(p);
-      });
+                    // Base Details shared by both types
+                    const details = [
+                        { label: "Style Id", value: product.style_id },
+                        { label: "order_id", value: product.order_id },
+                        { label: "order_created_date", value: product.order_created_date },
+                        { label: "Type", value: product.type },
+                    ];
 
-      // Purchase Link Element
-      const link = document.createElement("a");
-      link.textContent = "buy";
-      link.href = `https://myntra.com{product.style_id}`;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      item.appendChild(link);
+                    // Conditional Details Breakdown
+                    if (product.type !== "Return") {
+                        details.push(
+                            { label: "rto_cancel_date", value: product.rto_cancel_date },
+                            { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
+                            { label: "forward_tracking_number", value: forward_tracking_number }
+                        );
+                    } else {
+                        const diffDays = Math.round((parseDateToMs(product.return_created_date) - parseDateToMs(product.customer_delivered_date)) / 86400000);
 
-      container.appendChild(item);
-    });
-  })
-  .catch(error => console.error("Error loading JSON:", error));
+                        details.push(
+                            { label: "customer_delivered_date", value: product.customer_delivered_date },
+                            { label: "Days to return created", value: diffDays },
+                            { label: "return_created_date", value: product.return_created_date },
+                            { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
+                            { label: "return_reason", value: product.return_reason },
+                            { label: "forward_tracking_number", value: forward_tracking_number },
+                            { label: "return_tracking_number", value: product.return_tracking_number }
+                        );
+                    }
+
+                    // Render all details and insert the 5px color bar right below deliver_to_seller_date
+                    details.forEach(detail => {
+                        const p = document.createElement("p");
+                        p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
+                        item.appendChild(p);
+
+                        // Check if this row is the target date
+                        if (detail.label === "deliver_to_seller_date") {
+                            const colorBar = document.createElement("div");
+                            colorBar.style.height = "5px";
+                            colorBar.style.backgroundColor = dateColorMap[currentDate];
+                            colorBar.style.marginTop = "5px";
+                            colorBar.style.removeAttribute = "margin-bottom";
+                            colorBar.style.marginBottom = "10px"; // Adds space before the next element
+                            item.appendChild(colorBar);
+                        }
+                    });
+
+                    // Purchase Link Element
+                    const link = document.createElement("a");
+                    link.textContent = "buy";
+                    link.href = `https://myntra.com{product.style_id}`;
+                    link.target = "_blank";
+                    link.rel = "noopener noreferrer";
+                    item.appendChild(link);
+
+                    container.appendChild(item);
+                });
+            })
+            .catch(error => console.error("Error loading JSON:", error));
+
 
 
 
