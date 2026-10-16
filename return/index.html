@@ -97,8 +97,8 @@
 
                     // 1. Image Element Setup
                     const img = document.createElement("img");
-                    img.src = `../images/${product["style id"]}.jpg`;
-                    img.alt = product["style id"];
+                    img.src = `../images/${product["style_id"]}.jpg`;
+                    img.alt = product["style_id"];
 
                     // Safely handles image errors asynchronously 
                     img.onerror = function () {
@@ -109,7 +109,7 @@
                     // 2. Text Details Elements
                     if ("type" == "Return") {
                         const details = [
-                            { label: "Style Id", value: product["style id"] },
+                            { label: "Style Id", value: product["style_id"] },
                             { label: "order_id", value: product["order_id"] },
                             { label: "order_created_date", value: product["order_created_date"] },
                             { label: "customer_delivered_date", value: product["customer_delivered_date"] },
