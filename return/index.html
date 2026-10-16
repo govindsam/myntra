@@ -107,7 +107,7 @@
                     item.appendChild(img);
 
                     // 2. Text Details Elements
-                   if (product["type"] == "Return") {
+                    if (product["type"] == "Return") {
                         const details = [
                             { label: "Style Id", value: product["style_id"] },
                             { label: "order_id", value: product["order_id"] },
@@ -118,15 +118,23 @@
                             { label: "return_reason", value: product["return_reason"] }
                         ];
                         details.forEach(detail => {
-                        const p = document.createElement("p");
-                        p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
-                        item.appendChild(p);
-                    });
+                            const p = document.createElement("p");
+                            p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
+                            item.appendChild(p);
+                            const date1 = parseDate(product["order_created_date"]);
+                            const date2 = parseDate(product["return_created_date"]);
+
+                            const difference = Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
+
+                            const p2 = document.createElement("p");
+                            p2.textContent = `Return Days: ${difference}`;
+                            item.appendChild(p2);
+                        });
 
                     }
-                    
 
-                    
+
+
                     // 3. Purchase Link Element
                     const link = document.createElement("a");
                     link.textContent = "buy";
