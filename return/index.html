@@ -93,7 +93,7 @@
             const date = new Date(dateString);
             return isNaN(date.getTime()) ? null : date;
         }
-        fetch("return.json")
+       fetch("return.json")
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById("products");
@@ -106,28 +106,44 @@
       return Date.UTC(year, month - 1, day);
     };
 
-    // Helper function to generate a truly random light pastel color
-    const generateRandomPastelColor = () => {
+    // Helper function to generate a random dark, vibrant color
+    const generateRandomDarkColor = () => {
       const hue = Math.floor(Math.random() * 360);
-      return `hsl(${hue}, 70%, 90%)`; // Soft background so text stays readable
+      return `hsl(${hue}, 85%, 40%)`; 
     };
 
     // 1. Sort data from newest to oldest based on deliver_to_seller_date
     data.sort((a, b) => parseDateToMs(b.deliver_to_seller_date) - parseDateToMs(a.deliver_to_seller_date));
 
-    // 2. Create a map to store a unique random color for each unique date
+    // 2. Create a map to store a unique random dark color for each unique date
     const dateColorMap = {};
+    let lastDate = null; // Tracks the date of the previous card
 
     data.forEach(product => {
       const item = document.createElement("div");
       item.className = "product";
       
-      // 3. Assign or retrieve the random color for this specific date
-      const dateKey = product.deliver_to_seller_date || "N/A";
-      if (!dateColorMap[dateKey]) {
-        dateColorMap[dateKey] = generateRandomPastelColor();
+      const currentDate = product.deliver_to_seller_date || "N/A";
+      
+      // 3. Assign or retrieve the dark color for this specific date
+      if (!dateColorMap[currentDate]) {
+        dateColorMap[currentDate] = generateRandomDarkColor();
       }
-      item.style.backgroundColor = dateColorMap[dateKey];
+      
+      // 4. Apply a thick 5px top border using the unique date color
+      item.style.borderTop = `5px solid ${dateColorMap[currentDate]}`;
+      // Light border for the remaining sides to keep the card structure clean
+      item.style.borderLeft = "1px solid #ddd";
+      item.style.borderRight = "1px solid #ddd";
+      item.style.borderBottom = "1px solid #ddd";
+      item.style.borderRadius = "5px";
+      item.style.backgroundColor = "#ffffff";
+
+      // 5. Visually separate the two new dates using extra margin spacing
+      if (lastDate !== null && lastDate !== currentDate) {
+        item.style.marginTop = "30px"; 
+      }
+      lastDate = currentDate; // Update tracker for the next iteration
 
       // Image Element Setup
       const img = document.createElement("img");
@@ -189,6 +205,7 @@
     });
   })
   .catch(error => console.error("Error loading JSON:", error));
+
 
 
     </script>
