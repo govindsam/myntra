@@ -121,7 +121,9 @@
                             const p = document.createElement("p");
                             p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
                             item.appendChild(p);
-                            const date1 = parseDate(product["order_created_date"]);
+                            
+                        });
+                        const date1 = parseDate(product["order_created_date"]);
                             const date2 = parseDate(product["return_created_date"]);
 
                             const difference = Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
@@ -129,8 +131,6 @@
                             const p2 = document.createElement("p");
                             p2.textContent = `Return Days: ${difference}`;
                             item.appendChild(p2);
-                        });
-
                     }
 
 
