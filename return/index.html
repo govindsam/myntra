@@ -93,7 +93,7 @@
             const date = new Date(dateString);
             return isNaN(date.getTime()) ? null : date;
         }
-       fetch("return.json")
+        fetch("return.json")
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById("products");
@@ -106,27 +106,28 @@
       return Date.UTC(year, month - 1, day);
     };
 
-    // Helper function to generate a consistent pastel color based on a string string
-    const getColorFromDate = (dateStr) => {
-      if (!dateStr) return "#ffffff";
-      let hash = 0;
-      for (let i = 0; i < dateStr.length; i++) {
-        hash = dateStr.charCodeAt(i) + ((hash << 5) - hash);
-      }
-      // Generates soft pastel colors using HSL
-      const hue = Math.abs(hash) % 360;
-      return `hsl(${hue}, 70%, 90%)`; 
+    // Helper function to generate a truly random light pastel color
+    const generateRandomPastelColor = () => {
+      const hue = Math.floor(Math.random() * 360);
+      return `hsl(${hue}, 70%, 90%)`; // Soft background so text stays readable
     };
 
     // 1. Sort data from newest to oldest based on deliver_to_seller_date
     data.sort((a, b) => parseDateToMs(b.deliver_to_seller_date) - parseDateToMs(a.deliver_to_seller_date));
 
+    // 2. Create a map to store a unique random color for each unique date
+    const dateColorMap = {};
+
     data.forEach(product => {
       const item = document.createElement("div");
       item.className = "product";
       
-      // 2. Apply unique background color based on deliver_to_seller_date
-      item.style.backgroundColor = getColorFromDate(product.deliver_to_seller_date);
+      // 3. Assign or retrieve the random color for this specific date
+      const dateKey = product.deliver_to_seller_date || "N/A";
+      if (!dateColorMap[dateKey]) {
+        dateColorMap[dateKey] = generateRandomPastelColor();
+      }
+      item.style.backgroundColor = dateColorMap[dateKey];
 
       // Image Element Setup
       const img = document.createElement("img");
