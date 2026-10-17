@@ -85,7 +85,7 @@
         }
 
         // Fetch and render product data safely
-        fetch("../../low.json")
+        fetch("../../../low.json")
             .then(response => response.json())
             .then(data => {
                 const container = document.getElementById("products");
@@ -102,7 +102,7 @@
 
                     // 1. Image Element Setup
                     const img = document.createElement("img");
-                    img.src = `../../images/${product["style id"]}.jpg`;
+                    img.src = `../../../images/${product["style id"]}.jpg`;
                     img.alt = product["style id"];
 
                     // Safely handles image errors asynchronously 
