@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Set Inventory</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <h1>Jewellery Set Inventory</h1>
+    <!-- for Home button -->
+    <div class="home-btn" onclick="openSidebar()">
+        HOME
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+
+        <div class="close-btn" onclick="closeSidebar()">×</div>
+
+        <h2>Categories</h2>
+        <a href="https://govindsam.github.io/myntra" target="_blank">
+            Dashboard
+        </a>
+        <a href="https://govindsam.github.io/myntra/article/all_product" target="_blank">
+            All Product
+        </a>
+        <a href="https://govindsam.github.io/myntra/article/earrings" target="_blank">
+            Earrings
+        </a>
+
+
+
+        <a href="https://govindsam.github.io/myntra/article/bangle" target="_blank">
+            Bangle
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/necklace" target="_blank">
+            Necklace and Chain
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/bracelet" target="_blank">
+            Bracelet
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/ring" target="_blank">
+            Ring
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/pendant" target="_blank">
+            Pendant
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/anklet" target="_blank">
+            Anklet
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/head_jewellery" target="_blank">
+            Head Jewellery
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/saree_accessories" target="_blank">
+            Saree Accessories
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/mangalsutra" target="_blank">
+            Mangalsutra
+        </a>
+
+
+    </div>
+    <div id="products"></div>
+
+    <script>
+        // for sidebar
+        function openSidebar() {
+            document.getElementById("sidebar").classList.add("open");
+        }
+
+        function closeSidebar() {
+            document.getElementById("sidebar").classList.remove("open");
+        }
+
+        // Fetch and render product data safely
+        fetch("../../low.json")
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById("products");
+                container.innerHTML = ""; // Clear existing contents
+
+                data.forEach(product => {
+                    //  Early exit if it's not an Jewellery Set to prevent creating empty container items
+                    if (product["article type"] !== "Jewellery Set") {
+                        return;
+                    }
+
+                    const item = document.createElement("div");
+                    item.className = "product";
+
+                    // 1. Image Element Setup
+                    const img = document.createElement("img");
+                    img.src = `../../images/${product["style id"]}.jpg`;
+                    img.alt = product["style id"];
+
+                    // Safely handles image errors asynchronously 
+                    img.onerror = function () {
+                        item.remove();
+                    };
+                    item.appendChild(img);
+
+                    // 2. Text Details Elements
+                    const details = [
+                        { label: "Style Id", value: product["style id"] },
+                        { label: "Myntra SKU", value: product["sku code"] },
+                        { label: "Order Frequency", value: product.order_frequency },
+                        { label: "Analysis period", value: product.analysis_period },
+                        { label: "Ok Inventory", value: product.ok_inventory },
+                        { label: "Damage Inventory", value: product.damage_inventory },
+                        { label: "Inventory count date", value: product.inventory_count_date },
+                        { label: "myntra database inventory", value: product.inventory_in_myntra_database },
+                        { label: "snapshot date", value: product.snapshot_date },
+                        { label: "style status description", value: product["style status description"] },
+                        { label: "listing status description", value: product["listing status description"] }
+                    ];
+
+                    details.forEach(detail => {
+                        const p = document.createElement("p");
+                        p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
+                        item.appendChild(p);
+                    });
+
+                    // 3. Purchase Link Element
+                    const link = document.createElement("a");
+                    link.textContent = "buy";
+                    link.href = "https://myntra.com/" + product["style id"];
+                    link.target = "_blank";
+                    link.rel = "noopener noreferrer";
+                    item.appendChild(link);
+
+                    // Only append the fully constructed valid card to the DOM
+                    container.appendChild(item);
+                });
+            })
+            .catch(error => {
+                console.error("Error loading JSON:", error);
+            });
+
+
+    </script>
+
+</body>
+
+</html>
