@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return reason</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <h1>Return reason</h1>
+    <!-- for Home button -->
+    <div class="home-btn" onclick="openSidebar()">
+        HOME
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+
+        <div class="close-btn" onclick="closeSidebar()">×</div>
+
+        <h2>Categories</h2>
+        <a href="https://govindsam.github.io/myntra" target="_blank">
+            Dashboard
+        </a>
+        <a href="https://govindsam.github.io/myntra/article/all_product" target="_blank">
+            All Product
+        </a>
+        <a href="https://govindsam.github.io/myntra/article/earrings" target="_blank">
+            Earrings
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/jewellery_set" target="_blank">
+            Jewellery Set
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/necklace" target="_blank">
+            Necklace and Chain
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/bracelet" target="_blank">
+            Bracelet
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/ring" target="_blank">
+            Ring
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/pendant" target="_blank">
+            Pendant
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/anklet" target="_blank">
+            Anklet
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/head_jewellery" target="_blank">
+            Head Jewellery
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/saree_accessories" target="_blank">
+            Saree Accessories
+        </a>
+
+        <a href="https://govindsam.github.io/myntra/article/mangalsutra" target="_blank">
+            Mangalsutra
+        </a>
+
+
+    </div>
+    <div id="products"></div>
+
+    <script>
+        // for sidebar
+        function openSidebar() {
+            document.getElementById("sidebar").classList.add("open");
+        }
+        function closeSidebar() {
+            document.getElementById("sidebar").classList.remove("open");
+        }
+        function parseDate(dateString) {
+            if (!dateString) return null;
+
+            // Format: 9/17/26
+            if (dateString.includes("/")) {
+                const [month, day, year] = dateString.split("/");
+                return new Date(2000 + Number(year), Number(month) - 1, Number(day));
+            }
+
+            // Format: 28 September 2026
+            const date = new Date(dateString);
+            return isNaN(date.getTime()) ? null : date;
+        }
+        fetch("open.json")
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById("products");
+    container.innerHTML = ""; 
+
+    // Helper function to turn "DD/MM/YYYY" into a timestamp
+    const parseDateToMs = (dateStr) => {
+      if (!dateStr) return 0;
+      const [day, month, year] = dateStr.split("/").map(Number);
+      return Date.UTC(year, month - 1, day);
+    };
+
+    // Helper function to generate a random dark, vibrant color
+    const generateRandomDarkColor = () => {
+      const hue = Math.floor(Math.random() * 360);
+      return `hsl(${hue}, 85%, 40%)`; 
+    };
+
+    // 1. Sort data from newest to oldest based on deliver_to_seller_date
+    data.sort((a, b) => parseDateToMs(b.deliver_to_seller_date) - parseDateToMs(a.deliver_to_seller_date));
+
+    // 2. Variables to track date changes, colors, and alternating margins
+    const dateColorMap = {};
+    const dateMarginMap = {}; // Caches the calculated margin for each date group
+    let lastDate = null; 
+    let isLargeGap = true; // Alternating toggle switch
+
+    data.forEach(product => {
+      const item = document.createElement("div");
+      item.className = "product";
+      
+      const currentDate = product.deliver_to_seller_date || "N/A";
+      
+      // 3. Assign or retrieve the dark color for this specific date
+      if (!dateColorMap[currentDate]) {
+        dateColorMap[currentDate] = generateRandomDarkColor();
+      }
+
+      // 4. Calculate and alternate the margin-top ONLY when the date changes
+      if (!dateMarginMap.hasOwnProperty(currentDate)) {
+        if (lastDate === null) {
+          // First date group gets no extra top margin
+          dateMarginMap[currentDate] = "0px";
+        } else {
+          // Alternate margin sizes for different subsequent dates
+          dateMarginMap[currentDate] = isLargeGap ? "45px" : "20px";
+          isLargeGap = !isLargeGap; // Flip the switch for the next unique date group
+        }
+      }
+
+      // Track the previous item's date string
+      lastDate = currentDate; 
+      
+      // Regular card styling
+      item.style.border = "1px solid #ddd";
+      item.style.borderRadius = "5px";
+      item.style.backgroundColor = "#ffffff";
+      
+      // Apply the grouped margin layout to the first element of each new section
+      item.style.marginTop = dateMarginMap[currentDate];
+
+      // Image Element Setup
+      const img = document.createElement("img");
+      img.src = `../../images/${product.style_id}.jpg`;
+      img.alt = product.style_id;
+      img.onerror = () => item.remove();
+      item.appendChild(img);
+
+      // Shared Tracking Number Logic
+      const forward_tracking_number = product.forward_tracking_number_1?.startsWith("SF")
+        ? product.forward_tracking_number_2
+        : product.forward_tracking_number_1;
+
+      // Base Details shared by both types
+      const details = [
+        { label: "Style Id", value: product.style_id },
+        { label: "order_id", value: product.order_id },
+        { label: "order_created_date", value: product.order_created_date },
+        { label: "Type", value: product.type },
+      ];
+
+      // Conditional Details Breakdown
+      if (product.type !== "Return") {
+        details.push(
+          { label: "rto_cancel_date", value: product.rto_cancel_date },
+          { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
+          { label: "forward_tracking_number", value: forward_tracking_number }
+        );
+      } else {
+        const diffDays = Math.round((parseDateToMs(product.return_created_date) - parseDateToMs(product.customer_delivered_date)) / 86400000);
+
+        details.push(
+          { label: "customer_delivered_date", value: product.customer_delivered_date },
+          { label: "Days to return created", value: diffDays },
+          { label: "return_created_date", value: product.return_created_date },
+          { label: "deliver_to_seller_date", value: product.deliver_to_seller_date },
+          { label: "return_reason", value: product.return_reason },
+          { label: "forward_tracking_number", value: forward_tracking_number },
+          { label: "return_tracking_number", value: product.return_tracking_number }
+        );
+      }
+
+      // Render all details and insert the 5px color bar right below deliver_to_seller_date
+      details.forEach(detail => {
+        const p = document.createElement("p");
+        p.textContent = `${detail.label} : ${detail.value ?? 'N/A'}`;
+        item.appendChild(p);
+
+        if (detail.label === "deliver_to_seller_date") {
+          const colorBar = document.createElement("div");
+          colorBar.style.height = "5px";
+          colorBar.style.backgroundColor = dateColorMap[currentDate];
+          colorBar.style.marginTop = "5px";
+          colorBar.style.marginBottom = "10px";
+          item.appendChild(colorBar);
+        }
+      });
+
+      // Purchase Link Element
+      const link = document.createElement("a");
+      link.textContent = "buy";
+      link.href = `https://myntra.com{product.style_id}`;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      item.appendChild(link);
+
+      container.appendChild(item);
+    });
+  })
+  .catch(error => console.error("Error loading JSON:", error));
+
+
+
+
+    </script>
+
+</body>
+
+</html>
