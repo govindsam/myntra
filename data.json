@@ -649,9 +649,9 @@
     "listing status description": "Active",
     "order_frequency": "2",
     "analysis_period": "14Sep_to_13Oct",
-    "ok_inventory": "",
+    "ok_inventory": "29",
     "damage_inventory": "",
-    "inventory_count_date": "",
+    "inventory_count_date": "19/10/2026",
     "inventory_in_myntra_database": "32",
     "snapshot_date": "17_Oct"
   },
@@ -2009,9 +2009,9 @@
     "listing status description": "Active",
     "order_frequency": "",
     "analysis_period": "14Sep_to_13Oct",
-    "ok_inventory": "",
+    "ok_inventory": "23",
     "damage_inventory": "",
-    "inventory_count_date": "",
+    "inventory_count_date": "19/10/2026",
     "inventory_in_myntra_database": "20",
     "snapshot_date": "17_Oct"
   },
