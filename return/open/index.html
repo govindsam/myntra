@@ -72,35 +72,35 @@
             }
         }
     </script>
-    <p id="myText3">git add .
-        git commit -m "open return"
-        git push</p>
+   <pre id="myText3">git add .
+git commit -m "open return"
+git push</pre>
 
-    <button id="copyBtn3" onclick="copyText2()">Copy</button>
+<button id="copyBtn3" onclick="copyText2()">Copy</button>
 
-    <script>
-        async function copyText2() {
-            const text = document.getElementById("myText3").innerText;
-            const btn = document.getElementById("copyBtn3");
+<script>
+async function copyText2() {
+    const text = document.getElementById("myText3").textContent;
+    const btn = document.getElementById("copyBtn3");
 
-            try {
-                await navigator.clipboard.writeText(text);
+    try {
+        await navigator.clipboard.writeText(text);
 
-                btn.innerText = "✓ Copied";
-                btn.style.backgroundColor = "green";
-                btn.style.color = "white";
+        btn.innerText = "✓ Copied";
+        btn.style.backgroundColor = "green";
+        btn.style.color = "white";
 
-                setTimeout(() => {
-                    btn.innerText = "Copy";
-                    btn.style.backgroundColor = "";
-                    btn.style.color = "";
-                }, 2000);
+        setTimeout(() => {
+            btn.innerText = "Copy";
+            btn.style.backgroundColor = "";
+            btn.style.color = "";
+        }, 2000);
 
-            } catch (err) {
-                console.error("Copy failed:", err);
-            }
-        }
-    </script>
+    } catch (err) {
+        console.error("Copy failed:", err);
+    }
+}
+</script>
     <!-- for Home button -->
     <div class="home-btn" onclick="openSidebar()">
         HOME
