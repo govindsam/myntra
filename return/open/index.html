@@ -12,6 +12,7 @@
 
     <h1>Return reason</h1>
     <p id="myText">G:\inventory code\New folder\myntra\return\open</p>
+    
 
 <button id="copyBtn" onclick="copyText()">Copy</button>
 
@@ -19,6 +20,34 @@
 async function copyText() {
     const text = document.getElementById("myText").innerText;
     const btn = document.getElementById("copyBtn");
+
+    try {
+        await navigator.clipboard.writeText(text);
+
+        btn.innerText = "✓ Copied";
+        btn.style.backgroundColor = "green";
+        btn.style.color = "white";
+
+        setTimeout(() => {
+            btn.innerText = "Copy";
+            btn.style.backgroundColor = "";
+            btn.style.color = "";
+        }, 2000);
+
+    } catch (err) {
+        console.error("Copy failed:", err);
+    }
+}
+</script>
+<p id="myText2">G:\inventory code\New folder\myntra\return\open</p>
+    
+
+<button id="copyBtn2" onclick="copyText2()">Copy</button>
+
+<script>
+async function copyText2() {
+    const text = document.getElementById("myText2").innerText;
+    const btn = document.getElementById("copyBtn2");
 
     try {
         await navigator.clipboard.writeText(text);
