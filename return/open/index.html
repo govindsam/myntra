@@ -11,21 +11,31 @@
 <body>
 
     <h1>Return reason</h1>
-    <p id="myText">This is the text I want to copy.</p>
+    <p id="myText">G:\inventory code\New folder\myntra\return\open</p>
 
-<button onclick="copyText()">Copy</button>
+<button id="copyBtn" onclick="copyText()">Copy</button>
 
 <script>
-function copyText() {
+async function copyText() {
     const text = document.getElementById("myText").innerText;
+    const btn = document.getElementById("copyBtn");
 
-    navigator.clipboard.writeText(text)
-        .then(() => {
-            alert("Text copied successfully!");
-        })
-        .catch(err => {
-            console.error("Copy failed:", err);
-        });
+    try {
+        await navigator.clipboard.writeText(text);
+
+        btn.innerText = "✓ Copied";
+        btn.style.backgroundColor = "green";
+        btn.style.color = "white";
+
+        setTimeout(() => {
+            btn.innerText = "Copy";
+            btn.style.backgroundColor = "";
+            btn.style.color = "";
+        }, 2000);
+
+    } catch (err) {
+        console.error("Copy failed:", err);
+    }
 }
 </script>
     <!-- for Home button -->
