@@ -73,12 +73,12 @@ async function copyText2() {
 </p>
     
 
-<button id="copyBtn2" onclick="copyText2()">Copy</button>
+<button id="copyBtn3" onclick="copyText2()">Copy</button>
 
 <script>
 async function copyText2() {
-    const text = document.getElementById("myText2").innerText;
-    const btn = document.getElementById("copyBtn2");
+    const text = document.getElementById("myText3").innerText;
+    const btn = document.getElementById("copyBtn3");
 
     try {
         await navigator.clipboard.writeText(text);
