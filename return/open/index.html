@@ -11,6 +11,23 @@
 <body>
 
     <h1>Return reason</h1>
+    <p id="myText">This is the text I want to copy.</p>
+
+<button onclick="copyText()">Copy</button>
+
+<script>
+function copyText() {
+    const text = document.getElementById("myText").innerText;
+
+    navigator.clipboard.writeText(text)
+        .then(() => {
+            alert("Text copied successfully!");
+        })
+        .catch(err => {
+            console.error("Copy failed:", err);
+        });
+}
+</script>
     <!-- for Home button -->
     <div class="home-btn" onclick="openSidebar()">
         HOME
