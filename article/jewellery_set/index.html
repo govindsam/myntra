@@ -99,7 +99,9 @@
 
                     const item = document.createElement("div");
                     item.className = "product";
-
+                    if(product.inventory_in_myntra_database > 0 && product.inventory_in_myntra_database <4){
+                item.style.backgroundColor = "yellow";
+            }
                     // 1. Image Element Setup
                     const img = document.createElement("img");
                     img.src = `../../images/${product["style id"]}.jpg`;
