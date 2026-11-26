@@ -18,6 +18,9 @@ fetch("../../data.json")
 
         data.forEach(product => {
             const item = document.createElement("div");
+            if(product.inventory_in_myntra_database > 0 && product.inventory_in_myntra_database <4){
+                item.style.backgroundColor = "yellow";
+            }
             item.className = "product";
 
             const img = document.createElement("img");
