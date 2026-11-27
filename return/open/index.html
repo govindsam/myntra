@@ -247,7 +247,7 @@ async function copyText2() {
 
                     // Image Element Setup
                     const img = document.createElement("img");
-                    img.src = `../../images/${product.style_id}.jpg`;
+                    img.src = `../../images/`+ product.style_id +`.jpg`;
                     img.alt = product.style_id;
                     img.onerror = () => item.remove();
                     item.appendChild(img);
